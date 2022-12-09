@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi formulario</title>
+    <style>
+        header,
+        nav,
+        main,
+        article,
+        figure,
+        section,
+        footer,
+        aside {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Registro</h2>
+    </header>
+    <main>
+        <form action="mi_form_html5.html" method="get" autocomplete>
+            <br>
+            <label>Nombre: <input name="nombre" type="text" value="" size="25" maxlength="20" requires></label>
+            <label>Apellidos: <input name="apellidos" type="text" value="" size="35" maxlength="30" required></label>
+            <br><br>
+            <label>Correo electrónico: <input name="correo" type="text" value="" size="35" maxlength="30"
+                    required></label>
+            <br><br>
+            <hr>
+            <br>
+            <label>Contraseña: <input type="password" name="contra" id="contra" required></label>
+            <label>Confirmar contraseña: <input type="password" name="contraconf" id="contraconf" required></label>
+            <br><br>
+            <hr>
+            <br>
+            <label for="genero">Género:</label>
+            <input type="radio" name="genero" value="masc" checked> Masculino
+            <input type="radio" name="genero" value="fem"> Femenino
+            <input type="radio" name="genero" value="otro"> Otro
+            <br><br>
+            <hr>
+            <br>
+            <label>Fecha de nacimiento: <input type="date" name="nac" min="1960-01-01"></label>
+            <br><br>
+            <hr>
+            <br>
+            <label>Foto de perfil: <input type="file" name="foto"></label>
+            <br><br>
+            <hr>
+            <br>
+            <label for="ciudad">Ciudad:</label>
+            <select name="ciudad" id="ciudad">
+                <option value="Chipiona">Chipiona</option>
+                <option value="Sanlúcar">Sanlúcar</option>
+                <option value="Jerez">Jerez</option>
+                <option value="Chiclana">Chiclana</option>
+            </select>
+            <br><br>
+        </form>
+    </main>
+</body>
+
+</html>
